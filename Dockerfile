@@ -5,7 +5,7 @@ WORKDIR /tmp/
 RUN \
     wget --no-check-certificate --progress=bar:force --output-document=basealt.tar.xz https://mirror.yandex.ru/altlinux-starterkits/release/alt-p8-ovz-generic-20171212-i586.tar.xz && \
     mkdir -p /alt/ && \
-    tar -xJvf basealt.tar.xz -C /alt/
+    tar -xJvf /tmp/basealt.tar.xz -C /alt/
 
 FROM scratch
 COPY --from=downloader /alt/ /

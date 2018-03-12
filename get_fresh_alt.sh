@@ -6,7 +6,7 @@ TARGET_FILE=basealt.tar.xz
 
 
 function download(){
-	wget --progress=bar:force --output-document=${TARGET_FILE} http://nightly.altlinux.org/p8/release/${ALT_P8_IMG}
+	wget --progress=bar:force --output-document=${TARGET_FILE} https://mirror.yandex.ru/altlinux-starterkits/release/${ALT_P8_IMG}
         if [[ $? -eq 0 ]]
         then
                 echo 'Download completed'

@@ -3,4 +3,4 @@
 
 Run docker container:
 
-    docker run -ti --rm --name alt32 docker pull trollishe/altlinux-p8-32:latest /bin/bash
+    docker run -ti --rm --name alt32 trollishe/docker-altlinux-p8-32 /bin/bash

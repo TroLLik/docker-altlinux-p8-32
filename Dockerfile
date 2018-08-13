@@ -1,7 +1,7 @@
 FROM alpine:3.5 as downloader
 RUN apk add --no-cache wget tar xz
 
-ENV ALT_IMG_DATE=20180312
+ENV ALT_IMG_DATE=20180612
 ENV ALT_IMG_ARC=i586
 
 WORKDIR /tmp/
